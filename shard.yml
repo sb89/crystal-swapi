@@ -1,0 +1,17 @@
+name: swapi
+version: 0.1.0
+
+authors:
+  - Steven <s.blake.08@aberdeen.ac.uk>
+
+crystal: 0.21.0
+
+development_dependencies:
+  webmock:
+    github: manastech/webmock.cr
+    branch: master
+  mocks:
+    github: waterlink/mocks.cr
+    version: ~> 0.9
+
+license: MIT
