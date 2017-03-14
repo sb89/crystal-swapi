@@ -1,6 +1,6 @@
 # swapi
 
-TODO: Write a description here
+Star Wars API (SWAPI) for Crystal.
 
 ## Installation
 
@@ -9,7 +9,7 @@ Add this to your application's `shard.yml`:
 ```yaml
 dependencies:
   swapi:
-    github: [your-github-name]/swapi
+    github: sb89/crystal-swapi
 ```
 
 ## Usage
@@ -26,7 +26,7 @@ TODO: Write development instructions here
 
 ## Contributing
 
-1. Fork it ( https://github.com/[your-github-name]/swapi/fork )
+1. Fork it ( https://github.com/sb89/crystal-swapi/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
@@ -34,4 +34,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [[your-github-name]](https://github.com/[your-github-name]) Steven - creator, maintainer
+- [sb89](https://github.com/[your-github-name]) Steven - creator, maintainer
