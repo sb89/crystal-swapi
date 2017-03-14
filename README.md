@@ -1,4 +1,4 @@
-# swapi
+# crystal-swapi
 
 Star Wars API (SWAPI) for Crystal.
 
