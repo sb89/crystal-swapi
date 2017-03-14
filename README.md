@@ -2,6 +2,8 @@
 
 Star Wars API (SWAPI) for Crystal.
 
+Documentation: https://swapi.co/documentation
+
 ## Installation
 
 Add this to your application's `shard.yml`:
