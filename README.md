@@ -14,13 +14,68 @@ dependencies:
     github: sb89/crystal-swapi
 ```
 
-## Usage
+## Basic Usage
 
 ```crystal
 require "swapi"
+
+luke = Swapi::Person.get 1
+
+p luke.birth_year
+
+tatooine = Swapi::Planet.get 1
+
+p tatooine.climate
 ```
 
-TODO: Write usage instructions here
+## Get
+
+`get` can be called with an index (as seen above) or with no index, which will return all:
+
+```crystal
+planets = Swapi::Planet.get
+
+planets.results.each do |planet|
+  p planet.name
+end
+
+if planets.next?
+  planets = planets.get_next
+
+  planets.results.each do |planet|
+    p planet.name
+  end
+end 
+```
+
+## Search
+
+```crystal
+planets = Swapi::Planet.search "oine"
+
+planets.results.each do |planet|
+  p planet.name
+end
+```
+
+## List
+Both `search` and `get` (without an index) return a `List`
+
+```crystal
+planets = Swapi::Planet.get
+
+planets.count # Total number of planets
+
+planets.results # Contains the current batch of planets
+
+planets.next? # Is there another batch of planets?
+
+planets = planets.get_next # Get list for next batch of planets
+
+planets.previous? # Is there a previous batch of planets?
+
+planets = planets.get_previous # Get list for previous batch of planets
+```
 
 ## Contributing
 
