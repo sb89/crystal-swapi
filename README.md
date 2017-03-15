@@ -59,7 +59,7 @@ end
 ```
 
 ## List
-Both `search` and `get` (without an index) return a `List`
+Both `search` and `get` (without an index) return a `List`:
 
 ```crystal
 planets = Swapi::Planet.get
@@ -76,6 +76,18 @@ planets.previous? # Is there a previous batch of planets?
 
 planets = planets.get_previous # Get list for previous batch of planets
 ```
+
+## Linked Resources
+All resources are linked to some form of other resource. For example, a `Person` has `films`, `species`, `starships` and `vehicles`. The API returns these as urls to another resource. We can call `get_<resource>` e.g. `get_films` to get an array  the actual objects:
+
+```crystal
+planet = Swapi::Planet.get 1
+
+p planet.films # This will print an array of urls
+
+planet.get_films.each { |f| p f.title } # Use get_films to get the actual film objects and print their titles
+```
+
 
 ## Contributing
 
