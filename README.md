@@ -78,7 +78,7 @@ planets = planets.get_previous # Get list for previous batch of planets
 ```
 
 ## Linked Resources
-All resources are linked to some form of other resource. For example, a `Person` has `films`, `species`, `starships` and `vehicles`. The API returns these as urls to another resource. We can call `get_<resource>` e.g. `get_films` to get an array  the actual objects:
+All resources are linked to some form of other resource. For example, a `Person` has `films`, `species`, `starships` and `vehicles`. The API returns these as urls to another resource. We can call `get_<resource>` e.g. `get_films` to get an array of the actual objects:
 
 ```crystal
 planet = Swapi::Planet.get 1
