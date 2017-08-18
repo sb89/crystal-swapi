@@ -1,4 +1,5 @@
 # crystal-swapi
+[![Build Status](https://img.shields.io/travis/sb89/crystal-swapi/master.svg)](https://travis-ci.org/sb89/crystal-swapi)
 
 Star Wars API (SWAPI) for Crystal.
 
@@ -99,4 +100,4 @@ planet.get_films.each { |f| p f.title } # Use get_films to get the actual film o
 
 ## Contributors
 
-- [sb89](https://github.com/[your-github-name]) Steven - creator, maintainer
+- [sb89](https://github.com/sb89) Steven - creator, maintainer
